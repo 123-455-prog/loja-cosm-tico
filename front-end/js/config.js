@@ -1,7 +1,13 @@
 // Configuracao compartilhada de acesso a API do backend.
 // Usado por auth.js, products.js, cart.js e favorites.js.
 
-const API_BASE_URL = 'http://localhost:3333/api';
+// Em localhost usa o backend local; quando publicado (Vercel), usa o
+// backend hospedado no Render. TROQUE a linha abaixo pela URL real do
+// seu backend depois de fazer o deploy dele no Render.
+const RENDER_BACKEND_URL = 'https://loja-cosm-tico.onrender.com';
+
+const isLocal = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+const API_BASE_URL = isLocal ? 'http://localhost:3333/api' : `${RENDER_BACKEND_URL}/api`;
 
 function getToken() {
   return localStorage.getItem('token');
