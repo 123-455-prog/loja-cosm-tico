@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>favoritos - complete responsive cosmetics website</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shop-pages.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="index.html#home" class="logo"> <img src="images/logo.png" alt="Cosmetic Store"> </a>
+
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="favorites.html" class="fas fa-heart"></a>
+        <a href="cart.html" class="fas fa-shopping-cart"></a>
+        <a href="login.html" class="fas fa-user"></a>
+    </div>
+
+</header>
+
+<!-- navbar section  -->
+
+<nav class="navbar">
+    <div id="close-navbar" class="fas fa-times"></div>
+    <a href="index.html#home">home</a>
+    <a href="index.html#shop">shop</a>
+    <a href="index.html#gallery">gallery</a>
+    <a href="index.html#team">team</a>
+    <a href="index.html#arrivals">arrivals</a>
+    <a href="index.html#blogs">blogs</a>
+</nav>
+
+<!-- navbar section  -->
+
+<!-- header section ends -->
+
+<!-- favorites section starts -->
+
+<section class="favorites-section">
+
+    <div class="heading">
+        <h1>seus favoritos</h1>
+        <p>produtos que voce salvou para comprar depois</p>
+    </div>
+
+    <div class="favorites-grid" id="favorites-grid"></div>
+
+    <p class="empty-message" id="favorites-empty">voce ainda nao tem favoritos.</p>
+
+    <p class="form-message" id="favorites-message"></p>
+
+</section>
+
+<!-- favorites section ends -->
+
+<!-- custom js file link  -->
+<script src="js/config.js"></script>
+<script src="js/favorites.js"></script>
+
+</body>
+</html>

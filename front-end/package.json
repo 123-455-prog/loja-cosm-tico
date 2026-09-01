@@ -1,0 +1,11 @@
+{
+  "name": "cosmetic-website-frontend",
+  "version": "1.0.0",
+  "description": "Site estatico (HTML/CSS/JS) da loja de cosmeticos",
+  "scripts": {
+    "start": "live-server --port=3000 --ignore=node_modules"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

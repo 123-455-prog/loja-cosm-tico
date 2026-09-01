@@ -1,0 +1,123 @@
+/* auth page (login / cadastro) - segue a mesma paleta do style.scss */
+
+.auth-section {
+  min-height: calc(100vh - 8rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+}
+
+.auth-section .form-box {
+  width: 45rem;
+  max-width: 90vw;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 3rem 2.5rem;
+}
+
+.auth-section .tabs {
+  display: flex;
+  margin-bottom: 2.5rem;
+  border: 0.2rem solid #222;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.auth-section .tabs .tab-btn {
+  flex: 1 1 50%;
+  padding: 1.2rem;
+  background: #fff;
+  color: #222;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+.auth-section .tabs .tab-btn.active {
+  background: #e84393;
+  color: #fff;
+}
+
+.auth-section .auth-form {
+  display: none;
+}
+
+.auth-section .auth-form.active {
+  display: block;
+  animation: fadeUp 0.3s;
+}
+
+.auth-section .auth-form h3 {
+  font-size: 2.2rem;
+  color: #222;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.auth-section .input-box {
+  position: relative;
+  margin-bottom: 1.8rem;
+}
+
+.auth-section .input-box span {
+  position: absolute;
+  top: 50%;
+  left: 1.2rem;
+  transform: translateY(-50%);
+  font-size: 1.6rem;
+  color: #777;
+}
+
+.auth-section .input-box input {
+  width: 100%;
+  padding: 1.2rem 1.2rem 1.2rem 4rem;
+  font-size: 1.5rem;
+  color: #222;
+  background: #f5f5f5;
+  border-radius: 0.5rem;
+  text-transform: none;
+}
+
+.auth-section .input-box input:focus {
+  background: #fce9f2;
+}
+
+.auth-section .auth-form .btn {
+  width: 100%;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.auth-section .form-message {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #e84393;
+  min-height: 1.4rem;
+}
+
+.auth-section .switch-text {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #777;
+}
+
+.auth-section .switch-text a {
+  color: #e84393;
+  font-weight: 600;
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

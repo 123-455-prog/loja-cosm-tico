@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>entrar ou cadastrar - complete responsive cosmetics website</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="index.html#home" class="logo"> <img src="images/logo.png" alt="Cosmetic Store"> </a>
+
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="favorites.html" class="fas fa-heart"></a>
+        <a href="cart.html" class="fas fa-shopping-cart"></a>
+        <a href="login.html" class="fas fa-user"></a>
+    </div>
+
+</header>
+
+<!-- navbar section  -->
+
+<nav class="navbar">
+    <div id="close-navbar" class="fas fa-times"></div>
+    <a href="index.html#home">home</a>
+    <a href="index.html#shop">shop</a>
+    <a href="index.html#gallery">gallery</a>
+    <a href="index.html#team">team</a>
+    <a href="index.html#arrivals">arrivals</a>
+    <a href="index.html#blogs">blogs</a>
+</nav>
+
+<!-- navbar section  -->
+
+<!-- header section ends -->
+
+<!-- auth section starts -->
+
+<section class="auth-section">
+
+    <div class="form-box">
+
+        <div class="tabs">
+            <div class="tab-btn active" data-tab="login">entrar</div>
+            <div class="tab-btn" data-tab="register">cadastrar</div>
+        </div>
+
+        <form id="login-form" class="auth-form active">
+            <h3>acesse sua conta</h3>
+
+            <div class="input-box">
+                <span class="fas fa-envelope"></span>
+                <input type="email" id="login-email" placeholder="digite seu email" required>
+            </div>
+
+            <div class="input-box">
+                <span class="fas fa-lock"></span>
+                <input type="password" id="login-password" placeholder="digite sua senha" required>
+            </div>
+
+            <button type="submit" class="btn">login</button>
+
+            <p class="switch-text">ainda nao tem uma conta? <a href="#" data-switch="register">cadastre-se</a></p>
+        </form>
+
+        <form id="register-form" class="auth-form">
+            <h3>crie sua conta</h3>
+
+            <div class="input-box">
+                <span class="fas fa-user"></span>
+                <input type="text" id="register-name" placeholder="digite seu nome" required>
+            </div>
+
+            <div class="input-box">
+                <span class="fas fa-envelope"></span>
+                <input type="email" id="register-email" placeholder="digite seu email" required>
+            </div>
+
+            <div class="input-box">
+                <span class="fas fa-lock"></span>
+                <input type="password" id="register-password" placeholder="digite sua senha" required>
+            </div>
+
+            <div class="input-box">
+                <span class="fas fa-lock"></span>
+                <input type="password" id="register-repeat-password" placeholder="repita sua senha" required>
+            </div>
+
+            <button type="submit" class="btn">cadastrar</button>
+
+            <p class="switch-text">ja tem uma conta? <a href="#" data-switch="login">entrar</a></p>
+        </form>
+
+        <p class="form-message" id="form-message"></p>
+
+    </div>
+
+</section>
+
+<!-- auth section ends -->
+
+<!-- custom js file link  -->
+<script src="js/config.js"></script>
+<script src="js/auth.js"></script>
+
+</body>
+</html>

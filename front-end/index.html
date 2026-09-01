@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive cosmetics website design tutorial</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#home" class="logo"> <img src="images/logo.png" alt="Cosmetic Store"> </a>
+
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="favorites.html" class="fas fa-heart"></a>
+        <a href="cart.html" class="fas fa-shopping-cart"></a>
+        <a href="login.html" class="fas fa-user"></a>
+    </div>
+
+</header>
+
+<!-- navbar section  -->
+
+<nav class="navbar">
+    <div id="close-navbar" class="fas fa-times"></div>
+    <a href="#home">home</a>
+    <a href="#shop">shop</a>
+    <a href="#gallery">gallery</a>
+    <a href="#team">team</a>
+    <a href="#arrivals">arrivals</a>
+    <a href="#blogs">blogs</a>
+</nav>
+
+<!-- navbar section  -->
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="slide active">
+        <div class="content">
+            <img src="images/content-img-1.png" alt="promocao de cosmeticos">
+            <span>new arrivals 2022</span>
+            <h3>cosmetics</h3>
+            <a href="#shop" class="btn">read more</a>
+            <div class="controls">
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/home-img-1.png" alt="linha de cosmeticos em destaque">
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="content">
+            <img src="images/content-img-2.png" alt="promocao de acessorios de beleza">
+            <span>new arrivals 2022</span>
+            <h3>accessories</h3>
+            <a href="#shop" class="btn">read more</a>
+            <div class="controls">
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/home-img-2.png" alt="acessorios de beleza em destaque">
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="content">
+            <img src="images/content-img-3.png" alt="promocao de produtos para pele">
+            <span>new collections</span>
+            <h3>skin care</h3>
+            <a href="#shop" class="btn">read more</a>
+            <div class="controls">
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/home-img-3.png" alt="produtos para cuidados com a pele">
+        </div>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- category section starts  -->
+
+<section class="category">
+
+    <a href="#shop" class="box">
+        <img src="images/category-1.png" alt="categoria cosmeticos">
+        <p>cosmetics</p>
+    </a>
+
+    <a href="#shop" class="box">
+        <img src="images/category-2.png" alt="categoria maquiagem">
+        <p>makeup</p>
+    </a>
+
+    <a href="#shop" class="box">
+        <img src="images/category-3.png" alt="categoria perfumes">
+        <p>powder</p>
+    </a>
+
+    <a href="#shop" class="box">
+        <img src="images/category-4.png" alt="categoria cuidados com a pele">
+        <p>lotions</p>
+    </a>
+
+    <a href="#shop" class="box">
+        <img src="images/category-5.png" alt="categoria acessorios">
+        <p>lipstick</p>
+    </a>
+
+    <a href="#shop" class="box">
+        <img src="images/category-6.png" alt="categoria cabelo">
+        <p>mascara</p>
+    </a>
+
+</section>
+
+<!-- category section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <div class="content">
+        <span>why choose us?</span>
+        <h3>makeup makes difference</h3>
+        <p>Trabalhamos com marcas selecionadas de skincare e maquiagem, testadas e aprovadas pela nossa equipe antes de chegarem ate voce. Entrega rapida, embalagem cuidadosa e um atendimento que trata cada cliente pelo nome.</p>
+        <a href="#" class="btn">read more</a>
+    </div>
+    
+</section>
+
+<!-- about section ends -->
+
+<!-- shop section starts  -->
+
+<section class="shop" id="shop">
+
+    <div class="heading">
+        <h1>featured products</h1>
+        <p>Os produtos mais procurados da loja, direto do nosso catalogo, sempre atualizados.</p>
+    </div>
+
+    <div class="swiper products-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-1.jpg" alt="produto de cosmeticos 1">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>beauty products</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-2.jpg" alt="produto de cosmeticos 2">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>beauty products</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-3.jpg" alt="produto de cosmeticos 3">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>beauty products</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-4.jpg" alt="produto de cosmeticos 4">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>beauty products</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-5.jpg" alt="produto de cosmeticos 5">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>beauty products</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-6.jpg" alt="produto de cosmeticos 6">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>beauty products</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-7.jpg" alt="produto de cosmeticos 7">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>beauty products</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-8.jpg" alt="produto de cosmeticos 8">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>beauty products</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<!-- shop section ends -->
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <div class="heading">
+        <h1>our gallery</h1>
+        <p>Um pouco do dia a dia da loja: bastidores, lancamentos e os produtos em uso.</p>
+    </div>
+
+    <div class="lightbox">
+        <a href="images/img-1.jpg"><img src="images/img-1.jpg" alt="foto da galeria da loja 1"></a>
+        <a href="images/img-2.jpg"><img src="images/img-2.jpg" alt="foto da galeria da loja 2"></a>
+        <a href="images/img-3.jpg"><img src="images/img-3.jpg" alt="foto da galeria da loja 3"></a>
+        <a href="images/img-4.jpg"><img src="images/img-4.jpg" alt="foto da galeria da loja 4"></a>
+        <a href="images/img-5.jpg"><img src="images/img-5.jpg" alt="foto da galeria da loja 5"></a>
+        <a href="images/img-6.jpg"><img src="images/img-6.jpg" alt="foto da galeria da loja 6"></a>
+    </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+<!-- team section starts  -->
+
+<section class="team" id="team">
+
+    <div class="heading">
+        <h1>our team</h1>
+        <p>Especialistas em beleza prontos para te ajudar a encontrar o produto certo.</p>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images/team-1.png" alt="foto da equipe: camila ferreira">
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>camila ferreira</h3>
+                <p>especialista em skincare</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/team-2.png" alt="foto da equipe: rafaela martins">
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>rafaela martins</h3>
+                <p>make-up artist</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/team-3.png" alt="foto da equipe: larissa moura">
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>larissa moura</h3>
+                <p>consultora de fragrancias</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- team section ends -->
+
+<!-- arrivals section starts  -->
+
+<section class="arrivals" id="arrivals">
+
+    <div class="heading">
+        <h1>new arrivals</h1>
+        <p>Os lancamentos mais recentes da loja, acabaram de chegar.</p>
+    </div>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-1.jpg" alt="lancamento de cosmeticos 1">
+                </div>
+                <div class="content">
+                    <p>beauty products</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-2.jpg" alt="lancamento de cosmeticos 2">
+                </div>
+                <div class="content">
+                    <p>beauty products</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-3.jpg" alt="lancamento de cosmeticos 3">
+                </div>
+                <div class="content">
+                    <p>beauty products</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-4.jpg" alt="lancamento de cosmeticos 4">
+                </div>
+                <div class="content">
+                    <p>beauty products</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-5.jpg" alt="lancamento de cosmeticos 5">
+                </div>
+                <div class="content">
+                    <p>beauty products</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-6.jpg" alt="lancamento de cosmeticos 6">
+                </div>
+                <div class="content">
+                    <p>beauty products</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-7.jpg" alt="lancamento de cosmeticos 7">
+                </div>
+                <div class="content">
+                    <p>beauty products</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-8.jpg" alt="lancamento de cosmeticos 8">
+                </div>
+                <div class="content">
+                    <p>beauty products</p>
+                    <div class="price">$49.99 <span>$79.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+    
+</section>
+
+<!-- arrivals section ends -->
+
+<!-- reviews section starts  -->
+
+<section class="reviews">
+
+    <div class="swiper reviews-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-1.png" alt="foto da cliente mariana costa">
+                    <div class="info">
+                        <h3>mariana costa</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Comprei o serum de vitamina C e em duas semanas ja notei a pele mais uniforme. Entrega rapida e produto original.</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-2.png" alt="foto da cliente juliana alves">
+                    <div class="info">
+                        <h3>juliana alves</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Sou cliente ha meses e nunca tive problema. O shampoo reparador realmente deixou meu cabelo mais macio, recomendo demais.</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-3.png" alt="foto da cliente patricia lima">
+                    <div class="info">
+                        <h3>patricia lima</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Atendimento otimo, tiraram todas as minhas duvidas sobre qual base combinava com meu tom de pele.</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-4.png" alt="foto da cliente camila souza">
+                    <div class="info">
+                        <h3>camila souza</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">A base liquida tem uma cobertura incrivel e nao pesa no rosto. Virou item fixo no meu necessaire.</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-5.png" alt="foto da cliente fernanda dias">
+                    <div class="info">
+                        <h3>fernanda dias</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Pedi o perfume floral de presente e a embalagem chegou impecavel, bem protegida. A fragrancia e leve e dura o dia todo.</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-6.png" alt="foto da cliente beatriz nunes">
+                    <div class="info">
+                        <h3>beatriz nunes</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Melhor loja de cosmeticos que ja comprei online, os precos sao justos e os produtos sao de verdade.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- reviews section ends  -->
+
+<!-- service section starts  -->
+
+<section class="service">
+
+    <div class="box">
+        <img src="images/service-1.png" alt="icone de frete gratis">
+        <h3>free shipping</h3>
+        <p>Frete gratis para compras acima de R$ 150 em todo o Brasil.</p>
+    </div>
+
+    <div class="box">
+        <img src="images/service-2.png" alt="icone de pagamento seguro">
+        <h3>secure payment</h3>
+        <p>Pagamento protegido: cartao, pix ou boleto, com seus dados sempre seguros.</p>
+    </div>
+
+    <div class="box">
+        <img src="images/service-3.png" alt="icone de suporte ao cliente">
+        <h3>2/4 support</h3>
+        <p>Duvidas sobre seu pedido? Nossa equipe responde rapido, todos os dias.</p>
+    </div>
+
+</section>
+
+<!-- service section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <div class="heading">
+        <h1>our daily blogs</h1>
+        <p>Dicas de beleza, cuidados com a pele e novidades do mundo da cosmetica.</p>
+    </div>
+
+    <div class="swiper blogs-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/img-1.jpg" alt="imagem do post de blog 1">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 21st may, 2021 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>como escolher o serum certo para sua pele</h3>
+                    <p>Descubra como identificar as necessidades da sua pele antes de escolher um serum facial.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/img-2.jpg" alt="imagem do post de blog 2">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 21st may, 2021 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>5 passos para uma rotina de skincare completa</h3>
+                    <p>Uma rotina simples de manha e noite faz toda diferenca na saude da sua pele.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/img-3.jpg" alt="imagem do post de blog 3">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 21st may, 2021 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>maquiagem que dura o dia todo: veja como</h3>
+                    <p>Dicas praticas para a maquiagem nao desbotar nem passar do meio-dia.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/img-4.jpg" alt="imagem do post de blog 4">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 21st may, 2021 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>guia rapido: qual perfume combina com voce</h3>
+                    <p>Fragrancias amadeiradas, florais ou citricas: entenda qual combina com sua personalidade.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/img-5.jpg" alt="imagem do post de blog 5">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 21st may, 2021 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>cuidados essenciais para cabelos danificados</h3>
+                    <p>Hidratacao, protecao termica e os produtos certos para recuperar fios ressecados.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/img-6.jpg" alt="imagem do post de blog 6">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 21st may, 2021 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>tendencias de beleza para esta temporada</h3>
+                    <p>As cores, texturas e produtos que estao em alta entre nossas clientes.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a class="link" href="#home"> <i class="fas fa-angle-right"></i> home</a>
+            <a class="link" href="#shop"> <i class="fas fa-angle-right"></i> shop</a>
+            <a class="link" href="#gallery"> <i class="fas fa-angle-right"></i> gallery</a>
+            <a class="link" href="#team"> <i class="fas fa-angle-right"></i> team</a>
+            <a class="link" href="#arrivals"> <i class="fas fa-angle-right"></i> arrivals</a>
+            <a class="link" href="#blogs"> <i class="fas fa-angle-right"></i> blogs</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> my order </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> my favorite </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> my wishlist </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> private policy </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> terms of use </a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+            <p> <i class="fas fa-phone"></i> +111-222-3333 </p>
+            <p> <i class="fas fa-envelope"></i> shaikhanas@gmail.com </p>
+            <p> <i class="fas fa-map"></i> mumbai, india - 400104 </p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <form action="">
+                <input type="email" name="" placeholder="enter your email" id="" class="email">
+                <input type="submit" value="subscribe" class="btn">
+            </form>
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span>mr. web designer</span> | all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link      -->
+<script src="js/config.js"></script>
+<script src="js/script.js"></script>
+<script src="js/products.js"></script>
+
+<script>
+    lightGallery(document.querySelector('.gallery .lightbox'));
+</script>
+    
+</body>
+</html>
